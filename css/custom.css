@@ -1,42 +1,50 @@
 /* CSS Document */
 body {
 	background-image: url("../img/body_bg.jpg");
+	position:relative;
 	}
 
 #con{
   margin-left: auto ;
   margin-right: auto ;
   width:960px;
-  padding-top:100px;
+  padding-top:0px;
 }
 .navbar{
 	top:0px;
 	position:fixed;
-	width:800px;
+	width:400px;
 	padding-left:5px;
 	left:50%;
-	margin-left:-400px;
+	margin-left:0px;
 }
-.imgcenter{
+#titleimg{
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom:30px;
+	width:350px;
+	height:85.75px;
+	margin-left: 0px;
+	margin-top:10px;
+	margin-bottom:10px;
 }
-h2{   
-	border-left:7px solid rgb(84,110,149);   
-	border-bottom:1px dashed rgb(84,110,149);
-	margin: 0px 3px;
-	padding:3px 9px; 
-}  
+
+h2{	
+	margin: 0px;
+	padding:0px 0px 0px 5px;
+	color:#cc0000;
+}
 
 p{
-	font-size: 18px;
+	font-size: 20px;
 	padding:10px 15px;
 }
 
-#mh2{
-	margin-bottom:10px;	
+#cloud{
+	position:absolute;
+	left:0;
+	top:-10px;
+	z-index:-1;
 }
+
+
 
 
