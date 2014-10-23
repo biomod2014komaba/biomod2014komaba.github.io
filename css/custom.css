@@ -73,12 +73,13 @@ ul.menu:after {
 	margin:15px 40px 15px 40px;
 	background-color:#FFFFFF;
 	border-radius:15px 15px 15px 15px/ 15px 15px 15px 15px;
+	padding-bottom:40px;
 }
 
 .content p{
 	font-size: 32px;
 	line-height:42px;
-	padding:0px 90px 40px 90px;
+	padding:0px 90px 0px 90px;
 }
 
 
