@@ -1,0 +1,59 @@
+/* CSS Document */
+#main {
+	margin:0px auto;
+	width:960px;
+	background-color:#000000; 
+	background-image:url("../img/shimashima.png");
+	background-repeat:repeat-y; 
+	background-position:0px 20px;
+	padding-bottom:8px;
+}
+
+.sidebar { 
+width: 192px;
+top:80px;
+left:50%;
+margin-left:-465px;
+position:fixed;
+background-color:#ffffff;
+border-radius:10px 10px 10px 10px/ 10px 10px 10px 10px;
+}
+
+
+h2{margin:20px 0px;
+   font-size:36px;
+   font-weight:bold;
+   text-align:center;}
+   
+ul.sidemenu {
+	padding:0px 15px 10px 15px;
+}
+
+ul.sidemenu li{
+	list-style:none;
+	margin:0px 0px 5px 0px;
+}
+
+ul.sidemenu li a{
+	display:block;
+	width:100%;
+	height:100%;
+	line-height:30px;
+	font-size:22px;
+	text-decoration:none;
+	color:#000000;
+}
+
+.sidemain {
+	padding-top:30px;
+	margin:50px 10px 0px 220px;
+	width:730px;
+}
+
+.content {
+	margin:0px 0px 15px 0px;
+	background-color:#FFFFFF;
+	border-radius:15px 15px 15px 15px/ 15px 15px 15px 15px;
+	padding-top:15px;
+	padding-bottom:40px;
+}

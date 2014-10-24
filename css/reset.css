@@ -96,11 +96,3 @@ input, select {
 .clearfix {
 	min-height: 1px;
 }
-
-* html .clearfix {
-	height: 1px;
-	/*¥*//*/
-	height: auto;
-	overflow: hidden;
-	/**/
-}
