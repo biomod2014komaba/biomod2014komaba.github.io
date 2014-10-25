@@ -1,8 +1,26 @@
 /* CSS Document */
-body {
-	background:#000000 url("../img/sakura.png") no-repeat right bottom fixed;
+html,body{
+	/*background-color:#000000; 
+	background-image:url("../img/shimashima.png");
+	background-repeat:repeat-y; 
+	background-position:center 0px;*/
+	background-color:#000000;
+	background-image:url("../img/shimashima.png"), url("../img/sakura.png");
+	background-repeat:repeat-y, no-repeat;
+	background-position:center 0px,right bottom;
+	background-attachment:scroll,fixed;
 	font-family:"Arial";
 	}
+		
+#main {
+	margin:0px auto;
+	width:960px;
+	background-color:#000000; 
+	background-image:url("../img/shimashima.png");
+	background-repeat:repeat-y; 
+	background-position:0px 0px;
+	padding-bottom:8px;
+}
 
 ul.menu{
 	padding:0px;
@@ -37,7 +55,7 @@ ul.menu li a{
 }
 
 ul.menu li a:hover{
-	font-weight:bold;
+	color:#446da7;
 }
 
 ul.menu:after {
@@ -48,12 +66,6 @@ ul.menu:after {
 	clear:both;
 }
 
-.content p{
-	font-size: 30px;
-	line-height:40px;
-	padding:0px 80px;
-}
-
 h3{	
 	padding:0px 0px 12px 13px;
 }
@@ -61,16 +73,51 @@ h3{
 .imgblock{
 	display:block;
 	margin: 0px auto;
-	width:100%;
+	max-width:100%;
 	height:auto;
 }
 
+.content {
+	margin:15px 40px 15px 40px;
+	background-color:#FFFFFF;
+	border-radius:15px 15px 15px 15px/ 15px 15px 15px 15px;
+	padding-top:15px;
+	padding-bottom:30px;
+}
 
-	
+.content p{
+	font-size: 20px;
+	line-height:30px;
+	padding:0px 60px;
+}
 
 
+h1 { padding-top:95px;
+	 padding-left:40px;
+	 margin-bottom:75px;
+}
 
-/* 95px メニューと画像の間で空いている */
+h1 img { width:845px;}
+
+h3{	
+	padding:0px 0px 12px 13px;
+}
+
+.content h3 img {
+	height:50px;
+	width:auto;
+}
+
+ol.footnote {
+    counter-reset:li; /* Initiate a counter */
+    list-style-type: none;
+	padding:0px 60px;
+}
+
+ol.footnote li:before {
+    content:"*" counter(li) ": "; /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+}
 
 	
 	

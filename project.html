@@ -7,6 +7,7 @@
 <meta name="keywords" content="biomod komaba 2014" />
 <meta name="viewport" content="width=device-width">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="./js/jump.js"></script>
 <link href="./css/reset.css" rel="stylesheet">
 <link href="./css/common.css" rel="stylesheet">
 <link href="css/side.css" rel="stylesheet">
@@ -16,104 +17,108 @@
     	<li><a href="./index.html">top</a></li>
         <li><a href="./project.html">project</a></li>
 	    <li><a href="./methods.html">methods</a></li>
-        <li><a href="./protocols">protocols</a></li>
-        <li><a href="./results">results</a></li>
-		<li><a href="./team">team</a></li>
-		<li><a href="./acknowledgement">acknowledgement</a></li>
+        <li><a href="./protocols.html">protocols</a></li>
+        <li><a href="./results.html">results</a></li>
+		<li><a href="./team.html">team</a></li>
+		<li><a href="./acknowledgement.html">acknowledgement</a></li>
     </ul>
     
  <div class="sidebar">
-    <h2>project</h2>
+    <h2>protocols</h2>
     <ul class="sidemenu">
-    	<li><a href="#motivation">・motivation</a></li>
-        <li><a href="#outline">・outline of the project</a></li>
-        <li><a href="#bicolor">・bi-color DNA bead</a><li>
-        <li><a href="#design">・project design</a></li>
-        <li><a href="#future">・future prospects</a></li>
+    	<li><a href="#motivation">motivation</a></li>
+        <li><a href="#outline">outline of the project</a></li>
+        <li><a href="#bicolor">bi-color DNA bead</a><li>
+        <li><a href="#design">project design</a></li>
+        <li><a href="#future">future prospects</a></li>
     </ul>
-  </div>
+  </div>   
     
 <div id="main">
     <div class="sidemain">
 	<div class="content" id="motivation">
-    <h3><img src="./img/motivation.png"></h3>
-    <p>Today, there are some methods for making nanoscale structure. For example, photolithography is often used for making semiconductor device at nanoscale. But they are methods for 2-dimentional structure, and their limit of resolving is about to 10 nm scale. It is still difficult to make nanoscale structure accurately.
-
-If we can make 3-dimentional structure in nanoscale optionally, it must be useful in many fields, such as researching chemical reaction and new materials.
-
-There are two methods in nanofabrication, Top-down method and Bottom-up method. In Top-down method, expecting object is made from larger material, and in bottom-up method, it is made from smaller materials and materials. We found there is a possibility to break through in bottom-up method, using DNA and mag-beads. </p>
+    <h3><img src="./img/motivation.png" ></h3>
+    <p>Today, there are many methods for making micro-scale structures. Most of those that can make 3-dimensional structures, including 3D printing, are top-down in the sense that components of a structure are carefully located one by one at a target position using a very sophisticated machine. On the other hand, in a bottom-up method, components are self-assembled to form a complex structure. In this project, we pursue a possible break-through in bottom-up construction of micro-scale structures, using DNA and magnetic beads.</p>
     </div>
 <div class="content" id="outline">
-    <h3><img src="./img/outline.png"></h3>
-    <p>The goal of this project is to create “polychrome DNA beads”. “Polychrome DNA beads” are made from beads and multiple DNA with Carboxyvinyl Uracil (cvU)*1 on each part of surface of bead. Only cvU which are irradiated by UV light can react and DNA strands are fixed on beads. These DNA combine with “bridge DNA”*2 on next bead. So, we will be able to make accurate structure by joining “polychrome DNA beads” by some kind of appropriate “bridge DNA”.
-
-図
-
-There are two benefits of our solution compared with similar prior research.*3
-
-First, in our method, if that material can be attached DNA strand on its surface, any materials of particles can be used for core of “polychrome DNA beads”. Because DNA strand and beads are connected by avidin-viotin bonding. It is so useful because we need different feature as material of nanoscale structure according to its usage. And by changing the size of particles, the scale of structure can be easily determined.
-
-(図)
-
-Second, only by changing the direction for applying the light, it is possible to control the relative positions of the DNA. This means positions of DNA attached to the particles are not limited to two positions, but to various positions. And we can determine the relative positions of DNA attached to the particles. It makes easy to make angle or curve and it is necessary feature for making 3-dimentional structure. </p>
+    <h3><img src="./img/outline.png"  ></h3>
+    <p>The goal of this project is to create “polychrome DNA beads”, whose sphere is separated into several regions, each covered with a different kind of ssDNA. “Polychrome DNA beads” are made from particles covered with the same ssDNA. Multiple kinds of ssDNAs with carboxyvinyl uracil (cvU) are prepared. If cvU is irradiated by UV light, it makes a covalent bond with an adjacent DNA molecule. Therefore, it should be possible to ligate a different kind of ssDNA with the strands on each region of the sphere. We then prepare DNA strands, called “DNA bridges”, which hybridize with those ligated DNA strands. By joining “polychrome DNA beads” by appropriate kinds of “DNA bridges”, we will be able to make accurate 3-dimensional structures in a bottom-up manner. 
+    <img src="./img/outline1.png" class="imgblock">
+There are two benefits in our approach compared with a similar prior study.<a href="#footnote1"><sup>*1</sup></a>
+<br>
+First, in our approach, any kind of material can be used for core of “polychrome DNA beads” if DNA strands can be attached on the surface of a particle as in avidin-biotin interaction. We can therefore make use of different features of materials for specific applications. We can also change the size of particles to make structures at different scales.
+<br>
+Second, only by changing the direction of UV light irradiation, it is possible to control the regions to which ssDNAs are attached. This means that those regions are not limited to two hemispheres. We can allow more colors and more sophisticated shapes to make more complex 3-dimensional structure.    
+<br><br>
+<ol class="footnote">
+<li id="footnote1">Prior research: Formation of 1D and 2D Gold Nanoparticle Arrays by Divalent DNA-Gold Nanoparticle Conjugates
+<br>
+Yuichi Ohya et al, 2012</li>
+</ol>
+    </p>
     </div>
 <div class="content" id="bicolor">
-    <h3><img src="./img/bicolor.png"></h3>
-    <p>“Bi-color DNA beads” is basic type of “polychrome DNA beads”. Bi-color means having two colors. To research how to attach several kinds of DNA on one bead, we adopted two DNA version as a model.
-
-“Bi-color DNA beads” consist on magnetic beads and two types of DNA (named A and B). To join beads, complementary A and complementary B (cAcB) “DNA bridge” is used.
-
-This beads have two kind of DNA, so “bi-color DNA beads” make a straight line, 1-dimentional structure.
-
-We use magnetic beads for core of this “bi-color DNA beads”. Because magnetic beads as core have some benefits. Magnetic beads can be localized at specific area by applying a magnetic field to them. So we can raise efficiency of making “bi-color DNA beads”.
+    <h3><img src="./img/bicolor.png" ></h3>
+    <p>“Bi-color DNA beads” are the most basic “polychrome DNA beads” having two colors on two hemispheres. They are models for developing more general “polychrome DNA beads”.
+<br>
+Our “bi-color DNA beads” consist of magnetic beads and two kinds of DNAs (named A and B). The “DNA bridge” consisting of complementary A and complementary B (cAcB) is used to join the beads, and a straight-line 1-dimentional structure is created.
+<br>
+We use magnetic beads for core of our “bi-color DNA beads”. This has some benefits. Magnetic beads can be localized at a specific area by applying a magnetic field to them. So we can increase the efficiency of self-assembly of “bi-color DNA beads”.
 <img src="./img/bridge.png" class="imgblock"></p>
 
     </div>
  <div class="content" id="design">
-    <h3><img src="./img/design.png"></h3>
-    <p>In the experiments, we used 3 micron magnetic beads and well both coated with streptavidin. 3 kinds of DNA are needed to make “bi-color DNA beads”, so we named them Z, A, B respectively.
-
-Our method consists of 3 steps.
-
-First step is to attach Z strand with beads and complementary Z strand with well.
-
-We attach Z strand with biotin at 5’ end to the beads, complimentary Z strand to the well by using the avidin-biotin interaction.
-
-Then put the beads into the well and bind Z strand and complementary Z strand by hybridization.
+    <h3><img src="./img/design.png" ></h3>
+    <p>In the experiments, we use 3-micron magnetic beads and wells both coated with streptavidin. Three kinds of DNA strands are needed to make “bi-color DNA beads”, so we name them Z, A and B, respectively.
+Our method consists of three steps.
+<br>
+The first step is to attach Z-strand to beads and complementary Z-strand to a well.
+<br>
+We attach Z-strand with biotin at 5’ end to the beads, and complimentary Z strand to the well by avidin-biotin interaction.
+<br>
+Then we put the beads into the well and hybridize Z-strand and complementary Z-strand.
 
 <img src="./img/design1.png" class="imgblock">
 
-Second step is to attach A strand with Z strand on beads.
-
-In a separate tube, we hybridized cAcZ strand and A strand with a cvU. A strand and Z strand do not link just as they are, so we used cAcZ strand as a support.
-
-cvU is that carboxyl vinyl uracil, and a photo reactive base, by irradiating the light of 366nm, and is for connecting the DNA strand that exist nearby.
-
-These A strands with cvU, which is hybridized with cAcZ strands, are put in a well and hybridize with Z strand on beads.
-
-As a result, these newly put DNA are hybridized with the ones which Z strand on the beads not hybridized with the well.
-
-And we are irradiated with light of 366nm. Then, cvU react to light, and Z strands on beads and A strand with cvU are linked.
-
-We irradiate light for only a short time from the top of the beads. So, only the upper hemisphere of the beads is exposed to light. Then cvU only at the upper hemisphere of the beads do not react to light, and only DNA strands on the upper side do not ligate. This is most important point in making “polychrome DNA beads” or “bi-color DNA beads”.
-
-After that, by alkaline denaturation, cAcZ strands are removed from beads and beads are removed from the well.
-
+The second step is to connect A-strand with Z-strand on beads.
+<br>
+In a separate tube, we hybridized cAcZ-strand and A-strand with cvU. A-strand and Z-strand are not connected just as they are, so we use cAcZ-strand as a support.
+<br>
+Note that cvU, which stands for carboxyl vinyl uracil, is a photo reactive base, and is connected to an adjacent DNA strand when irradiated with the light whose wave length is 366nm.
+<br>
+A-strand with cvU, which is hybridized with cAcZ-strand, is put in the well and hybridized with Z strand on beads.
+<br>
+As a result, A-strand with cvU and cAcZ-strand are hybridized with the copies of
+<br>
+Z-strand on the beads that are not hybridized with the well.
+<br>
+We irradiate the well with the light whose wave length is 366nm. Then, cvU reacts to the light, and Z-strand on beads and A-strand with cvU are ligated.
+<br>
+We irradiate the well for only a short time from the top of the well. So, only the upper hemisphere of the beads is exposed to the light. Then the copies of cvU only at the upper hemisphere of the beads react to light, and only DNA strands on the upper side are ligated. This is most important point in making “polychrome DNA beads” or “bi-color DNA beads”.
+<br>
+After that, by alkaline denaturation, cAcZ-strands are removed from the beads, and the beads are removed from the well.
 <img src="./img/design2.png" class="imgblock">
 
-Third step is to attach B strand with Z strand on beads.
-
-We attach complementary A strands to another well and hybridize them with processed beads. And same as second step, we hybridize B strand with cBcZ strand, and add them to the well and hybridize. After irradiating the light of 366nm, we remove strands which are not linked with A strands on the beads by alkaline denaturation. Then it is completion of “bi-color DNA beads”. 
+The third step is to attach B-strand to Z-strand on the beads.
+<br>
+We attach complementary A-strand to another well and hybridize them with the processed beads. As in the second step, we hybridize B-strand with cBcZ-strand, and add them to the well and hybridize them with Z-strand. After irradiating the well with the light whose wave length is 366nm, we remove strands which are not ligated with A-strand on the beads by alkaline denaturation. Then the construction of “bi-color DNA beads” is complete.
 <img src="./img/design3.png" class="imgblock">
+We have not done an experiment for making multi-color DNA beads, but if the beads are immobilized to a well containing cA-strand, and irradiated with light from the side, we think it is possible to attach more kinds of DNA strands to the beads.
 </p>
     </div>
 <div class="content" id="future">
-    <h3><img src="./img/future.png"></h3>
-    <p>Today, there are some methods for making nanoscale structure. For example, photolithography is often used for making semiconductor device at nanoscale. But they are methods for 2-dimentional structure, and their limit of resolving is about to 10 nm scale. It is still difficult to make nanoscale structure accurately.
-
-If we can make 3-dimentional structure in nanoscale optionally, it must be useful in many fields, such as researching chemical reaction and new materials.
-
-There are two methods in nanofabrication, Top-down method and Bottom-up method. In Top-down method, expecting object is made from larger material, and in bottom-up method, it is made from smaller materials and materials. We found there is a possibility to break through in bottom-up method, using DNA and mag-beads. </p>
+    <h3><img src="./img/future.png" ></h3>
+    <p>・Making “polychrome DNA beads”
+<br>
+We have succeeded in making “bi-color DNA beads”. The next step will be to make multicolor versions. We estimate that we can create up to hexa-colored beads. Using those beads, it would be possible to create even more complex 3-dimensional structures.
+<br>
+・Applying the characteristic features of magnetic beads
+<br>
+In our project, we used magnetic beads for core of our “bi-color DNA beads”. However, we could not make full use of characteristic features of magnetic beads. For example, magnetic beads generate heat by applying high-frequency magnetic waves, resulting in melting double strands of DNA. We may be able to use this feature for breaking once created structures.
+<br>
+Magnetic fields may also be useful for adjusting the density of “polychrome DNA beads”.
+<br>
+Both magnetic fields and high-frequency waves can operate by remote control and influence self-assembly of structures. That is, we may be able to control the process of self-assembly, resulting in different structures, or transforming self-assembled structures. </p>
     </div>               
   </div>
 </div>

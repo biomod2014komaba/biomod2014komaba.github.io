@@ -4,19 +4,19 @@ h3 {
 	padding: 3px 5px;
     border-left: 40px solid #A73445;
     border-bottom: 8px solid #A73445;
-    font-size: 36px;
+    font-size: 30px;
 	color:#A73445;
 }
 
 h4{
 	margin:0px 20px 25px 20px;
 	color:#e2a3ad;
-	font-size:32px;
+	font-size:25px;
 }
 
 .content {padding-top:30px;}
 
-.links {margin:40px 80px 0px;}
+.links {margin:30px 80px 0px;}
 
 .links p{
 	padding:0px;
@@ -36,8 +36,9 @@ h4{
 }
 
 .links a{
-	font-size:36px;
+	font-size:30px;
 	color:#446da7;
+	text-decoration:none;
 }
 
 
