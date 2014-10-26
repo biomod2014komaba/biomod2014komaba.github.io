@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Komaba - Biomod2014</title>
+<meta name="description" content="biomod 2014 komaba"/>
+<meta name="keywords" content="biomod komaba 2014" />
+<meta name="viewport" content="width=device-width">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="./css/reset.css" rel="stylesheet">
+<link href="./css/common.css" rel="stylesheet">
+<link href="./css/top.css" rel="stylesheet">
+</head>
+<body>
+    <ul class="menu clearfix">
+    	<li><a href="./index.html">top</a></li>
+        <li><a href="./project.html">project</a></li>
+	    <li><a href="./methods.html">methods</a></li>
+        <li><a href="./protocols.html">protocols</a></li>
+        <li><a href="./results.html">results</a></li>
+		<li><a href="./team.html">team</a></li>
+		<li><a href="./acknowledgement.html">acknowledgement</a></li>
+    </ul>
+<div id="main">
+    <h1><img src="./img/komabacloud.png"></h1>
+    <div class="content">
+<p>
+    <strong>Materials ::</strong>
+</p>
+<p>
+    DNA oligonucleotide sequences:
+</p>
+<p>
+    We employ the following DNA oligonucleotides (
+    <img width="44" height="19" src="img/clip_image018.png"/>
+    ) for experiments (nucleotide ordering is 5’ to 3’):
+</p>
+<p>
+    <strong>Name: Seq. (5’ </strong>
+    <img width="10" height="15" src="img/clip_image020.png"/>
+    <strong> 3’)</strong>
+</p>
+<p>
+    (b-S1*): 5’ – biotin - GGCGGGAGGATAATCTTAGAACA - 3’
+</p>
+<p>
+    (b-pT(20)-S1*): 5’ – biotin - TTTTTTTTTTTTTTTTTTTT - GGCGGGAGGATAATCTTAGAACA – 3’
+</p>
+<p>
+    (S1*-FAM): 5’ – GGCGGGAGGATAATCTTAGAACA – FAM – 3’
+</p>
+<p>
+    (<sup>cv</sup>U-S1): 5’ – <sup>cv</sup>U - TGTTCTAAGATTATCCTCCCGCC - 3’
+</p>
+<p>
+    (b-S2*): 5’ – biotin – GGCGGCTATAACAATTTCATCCA – 3’
+</p>
+<p>
+    (S2*-Cy5): 5’ – GGCGGCTATAACAATTTCATCCA – Cy5 – 3’
+</p>
+<p>
+    (<sup>cv</sup>U-S2): 5’ – <sup>cv</sup>U – TGGATGAAATTGTTATAGCCGCC - 3’
+</p>
+<p>
+    (b-S3): 5’ – biotin - GCCCACACTCTTACTTATCGACT - 3’
+</p>
+<p>
+    (b-pT(20)-S3): 5’ – biotin – TTTTTTTTTTTTTTTTTTTT - GCCCACACTCTTACTTATCGACT – 3’
+</p>
+<p>
+    (b-pT(20)-S3*-FAM): 5’ – biotin – TTTTTTTTTTTTTTTTTTTT – AGTCGATAAGTAAGAGTGTGGGC – FAM – 3’
+</p>
+<p>
+    (b-S3-FAM): 5’ – biotin - GCCCACACTCTTACTTATCGACT – FAM - 3’
+</p>
+<p>
+    (S1*-S3*): 5’ - GGCGGGAGGATAATCTTAGAACA – AGTCGATAAGTAAGAGTGTGGGC – 3’
+</p>
+<p>
+    (S2*-S3*): 5’ - GGCGGCTATAACAATTTCATCCA – AGTCGATAAGTAAGAGTGTGGGC – 3’
+</p>
+<p>
+    All oligonucleotides above are derivatives of three “base” sequences {S1, S2, S3} and/or their Watson-Crick complements {S1*, S2*, S3*}. Note that this set
+    of a base sequences is designed: (1) to have minimal intramolecular secondary structure; and (2) to be “orthogonal” such that intermolecular interactions
+    between all possible pairs of strands (other than a strand and its Watson-Crick complement, e.g. {S1, S1*}) are minimized. Note that <sup>cv</sup>U here
+    refers to a chemically modified nucleobase (5-cyanovinyl-2’-deoxyuridine / <sup>CV</sup>U) which can be photoligated to an immediately upstream pyrimidine
+    nucleoside via irradiation at
+    <img width="63" height="19" src="img/clip_image022.png"/>
+    (i.e. the wavelength corresponding to the highest quantum yield (
+    <img width="12" height="19" src="img/clip_image024.png"/>
+    ) for the photocrosslinking reaction).
+</p>
+<p>
+    ----------------
+</p>
+<p>
+    <strong>Methods ::</strong>
+</p>
+<p>
+    <strong>(Experiment Set 1): Demonstration and quantitation of magnetic bead capture in microplate wells via DNA binding interactions.</strong>
+</p>
+<p>
+    ------
+</p>
+<p>
+    <strong>(1.1) - Competitive binding assay between b-S3 &amp; b-S3-FAM oligonucleotides for fluorescence readout calibration.</strong>
+</p>
+<p>
+    <strong>Short summary of experiment:</strong>
+    Here, we incubate streptavidin coated magnetic beads (
+    <img width="47" height="19" src="img/clip_image026.png"/>
+    diameter ferromagnetic (Fe<sub>2</sub>O<sub>3</sub>) iron oxide particles; Magnosphere(TM) MS300/Streptavidin; JSR Lifesciences) with varying ratios of
+    fluorescent biotinylated b-S3-FAM and non-fluorescent biotinylated b-S3 oligonucleotides. Then, after successive washing steps, we quantitate fluorescence
+    levels of each bead sample in the wells of a microplate.
+</p>
+<p>
+    This experiment will demonstrate three things: (1) that we can successfully label the aforementioned ferromagnetic beads with oligonucleotides; (2) that we
+    can retain these oligonucleotide labels over the course of several washing steps, where the washing steps are based on magnetic-field capture (which will
+    be demonstrated by fluorescent measurements at the end of the experiment); and (3) that the decided upon concentrations of beads will be sufficient to
+    place fluorescence measurements in the linear range of the detector / scanner we employ (i.e. measurements will fall above the detector noise floor and
+    below the point of detector saturation).
+</p>
+<p>
+    ---
+</p>
+<p>
+    <strong>Protocol for experiment [1.1]:</strong>
+</p>
+<p>
+    [Step 1] We begin by diluting b-S3 and b-S3-FAM oligonucleotides to a
+    <img width="32" height="19" src="img/clip_image028.png"/>
+    concentration in
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer (
+    <img width="24" height="19" src="img/clip_image032.png"/>
+    mM NaCl,
+    <img width="16" height="19" src="img/clip_image034.png"/>
+    mM sodium citrate, 0.05% Tween-20; pH 7.0).
+</p>
+<p>
+    [Step 2] We take a
+    <img width="36" height="19" src="img/clip_image036.png"/>
+    aliquot of the solution containing magnetic beads (
+    <img width="102" height="19" src="img/clip_image038.png"/>
+    of beads =&gt;
+    <img width="53" height="19" src="img/clip_image040.png"/>
+    beads in this
+    <img width="36" height="19" src="img/clip_image036.png"/>
+    aliquot) (Magnosphere(TM) MS300/Streptavidin; JSR Lifesciences), set this volume on a magnetic stand for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    to collect the magnetic beads at the bottom of the microtube, and finally, we wash off the supernatant. We then additionally wash the magnetic beads (
+    <img width="8" height="19" src="img/clip_image044.png"/>
+    times) with
+    <img width="36" height="19" src="img/clip_image046.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer, and then resuspend the beads in this same
+    <img width="36" height="19" src="img/clip_image046.png"/>
+    volume of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer.
+</p>
+<p>
+    [Step 3] We partition the
+    <img width="36" height="19" src="img/clip_image046.png"/>
+    buffer into three equivalent
+    <img width="36" height="19" src="img/clip_image048.png"/>
+    aliquots (to microtubes assigned the labels 1, 2, &amp; 3). These aliquots are placed on the same magnetic stand as in [step 2], left on the stand for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    to allow the magnetic beads in solution to collect on the tube wall at the point nearest to the magnet, and finally, the supernatant in each aliquot is
+    dumped (taking care not to loss the magnetic bead “pellet”).
+</p>
+<p>
+    [Step 4] For microtube 1, to a volume of
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    we add
+    <img width="56" height="19" src="img/clip_image052.png"/>
+    (=&gt;
+    <img width="33" height="19" src="img/clip_image054.png"/>
+    ) of the b-S3-FAM oligonucleotide &amp;
+    <img width="56" height="19" src="img/clip_image056.png"/>
+    (=&gt;
+    <img width="41" height="19" src="img/clip_image058.png"/>
+    ) of the b-S3 oligo (achieving a 1:9 ratio of b-S3-FAM to b-S3), for microtube 2, to a volume of
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    we add
+    <img width="56" height="19" src="img/clip_image060.png"/>
+    (=&gt;
+    <img width="41" height="19" src="img/clip_image062.png"/>
+    ) of b-S3-FAM &amp;
+    <img width="56" height="19" src="img/clip_image064.png"/>
+    (=&gt;
+    <img width="41" height="19" src="img/clip_image066.png"/>
+    ) of b-S3 (achieving a 3:7 ratio), and finally, for microtube 3, to a volume of
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    we add
+    <img width="45" height="19" src="img/clip_image068.png"/>
+    (=&gt;
+    <img width="41" height="19" src="img/clip_image070.png"/>
+    ) of the b-S3-FAM oligo and no b-S3 (achieving a 1:0 ratio of b-S3-FAM to b-S3).
+</p>
+<p>
+    [Step 5] We place the three samples from [step 4] in a microtube rotator for
+    <img width="45" height="19" src="img/clip_image072.png"/>
+    , then pellet the magnetic beads with a
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    incubation on the magnetic stand. Once pelleting occurs, the supernatant in each microtube is dumped.
+</p>
+<p>
+    [Step 6] To each of microtube we add
+    <img width="36" height="19" src="img/clip_image048.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image074.png"/>
+    SSCT buffer, and once again, pellet the magnetic beads in each microtube with a
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    incubation on the magnetic stand, and dump the supernatant in each microtube.
+</p>
+<p>
+    [Step 7] We resuspend the magnetic beads in each microtube with a
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    volume of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer.
+</p>
+<p>
+    [Step 8] We partition the
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    of solution in each microtube {1 through 3} to individual U-shaped wells of a microplate (
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    per well). Note that wells here are “naked” (without a protein coating of e.g. of streptavidin).
+</p>
+<p>
+    [Step 9] We employ a fluorescent microplate reader FLA-5100 (GE Healthcare Japan) to quantitate the fluorescence level of FAM in each well of the
+    microplate.
+</p>
+<p>
+    ---
+</p>
+<p>
+    <strong>Results &amp; analysis for experiment [1.1]:</strong>
+</p>
+<p align="left">
+    Figure 1: Fluorescent reads for microplate wells containing
+    <img width="50" height="17" src="img/clip_image076.png"/>
+    diameter Fe<sub>2</sub>O<sub>3</sub>-core magnetic beads incubated with varying concentration ratios of b-S3-FAM and b-S3 oligonucleotides.
+</p>
+<p align="center">
+    <img width="472" height="117" src="img/clip_image078.jpg"/>
+</p>
+<p align="left">
+    Fig. 1: Microplate scans from [step 9] of experiment [1.1]. Here, fluorescence levels for each of the
+    <img width="47" height="17" src="img/clip_image080.png"/>
+    <img width="17" height="17" src="img/clip_image082.png"/>
+    SSCT buffered solutions of magnetic beads in each well is quantitated using an FLA-5100 fluorescence scanner (GE Healthcare Japan), set to an appropriate
+    wavelength for the FAM dye labels (
+    <img width="99" height="17" src="img/clip_image084.png"/>
+    ::
+    <img width="96" height="17" src="img/clip_image086.png"/>
+    ). The concentration ratio of b-S3-FAM and b-S3 oligonucleotides (during the biotin-based bead labeling step) is indicated over each well (see RED labels).
+    We note a clear increase in FAM fluorescence intensity as a function of increasing the b-S3-FAM to b-S3 oligonucleotide concentration ratio during the bead
+    labeling step.
+</p>
+<p>
+    <strong>
+        Figure 2: Demonstration of a linear relationship between the molar fraction of b-S3-FAM during bead labeling and arbitrary units of fluorescence.
+    </strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p align="center">
+    <img width="531" height="322" src="img/clip_image088.png"/>
+</p>
+<p align="left">
+    Fig. 2: The above plot shows quantitated relative values of fluorescence from the microplate scans in Figure 1 normalized to a “blank” well with only
+    <img width="47" height="17" src="img/clip_image080.png"/>
+    of
+    <img width="17" height="17" src="img/clip_image082.png"/>
+    SSCT buffer and no magnetic beads. The b-S3-FAM to b-S3 ratios for the three data points are again: {1:9, 3:7, 10:0}. Note the observed linear relationship
+    (i.e. note the regression line
+    <img width="221" height="17" src="img/clip_image090.png"/>
+    b-S3-FAM
+    <img width="6" height="17" src="img/clip_image092.png"/>
+    with a coefficient of determination
+    <img width="85" height="18" src="img/clip_image094.png"/>
+    ), indicating a lack of saturation at upper-end values of the b-S3-FAM ratio (10:0) during the magnetic bead labeling step, as well as the sensitivity to
+    beads labeled at the lower-end (1:9) ratio of b-S3-FAM.
+</p>
+<p>
+    ------
+</p>
+<p>
+    <strong>(1.2) – Confirmation of sequence-specific bead docking in microplate wells.</strong>
+</p>
+<p>
+    <strong>Short summary of experiment: </strong>
+    Here we attempt to demonstrate sequence-specific docking of oligonucleotide coated magnetic beads to specific wells of a microplate labeled with
+    Watson-Crick complementary oligonucleotides. The basic experiment will consist of labeling streptavidin coated magnetic beads with b-S3 oligonucleotides,
+    then applying these beads to three different “types” of (here, flat-bottomed &amp; streptavidin coated) microplate wells: (1) wells labeled with b-S3*
+    oligonucleotides (complementary to the sequences on the b-S3 labeled magnetic beads); (2) wells labeled with b-S1* oligonucleotides (non-complementary to
+    the strands on the b-S3 labeled magnetic beads); and (3) wells left “blank” (i.e. unlabeled by any oligonucleotide and only filled with
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer).
+</p>
+<p>
+    ---
+</p>
+<p>
+    <strong>Protocol for experiment [1.2]:</strong>
+</p>
+<p>
+    [Step 1] We begin by preparing separate aliquots of the b-S3, b-S3-FAM, and b-S1* oligonucleotides, where each oligonucleotide is at a
+    <img width="32" height="19" src="img/clip_image028.png"/>
+    concentration.
+</p>
+<p>
+    [Step 2] We pre-wash the wells of the microplate by flushing each well with
+    <img width="44" height="19" src="img/clip_image096.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer, and we do this three times.
+</p>
+<p>
+    [Step 3] We label eight wells of the microplate {“well 1”, “well, 2”, “well 3”, “well 4”, “well 5”, “well 6”, “well 7”, “well 8”}. And in this step, we add
+    the following solutions to these eight wells:
+</p>
+<p>
+    Wells 1 &amp; 5: …we add
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    of the
+    <img width="32" height="19" src="img/clip_image028.png"/>
+    solution of the b-S3* strand.
+</p>
+<p>
+    Wells 2 &amp; 6: …we add
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    of the
+    <img width="32" height="19" src="img/clip_image028.png"/>
+    solution of the b-S1* strand.
+</p>
+<p>
+    Wells 3, 4, 7, &amp; 8: …we add only
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer.
+</p>
+<p>
+    [Step 4] We gently agitate the microplate for
+    <img width="27" height="19" src="img/clip_image098.png"/>
+    at room temperature (
+    <img width="46" height="19" src="img/clip_image100.png"/>
+    -
+    <img width="31" height="19" src="img/clip_image102.png"/>
+    ).
+</p>
+<p>
+    [Step 5] In this step, we take a
+    <img width="44" height="19" src="img/clip_image104.png"/>
+    sample of magnetic beads (
+    <img width="31" height="19" src="img/clip_image106.png"/>
+    pmol of beads) (Magnosphere(TM) MS300/Streptavidin; JSR Lifesciences), set this solution on a magnetic stand for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    to pellet the beads, and then we dump the supernatant.
+    <br/>
+    <br/>
+</p>
+<p>
+    [Step 6] We wash the beads from the previous step with
+    <img width="44" height="19" src="img/clip_image108.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer, and the beads are again pelleted for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    on a magnetic stand to allow for the removal of the wash solution.
+</p>
+<p>
+    [Step 7] We add
+    <img width="44" height="19" src="img/clip_image104.png"/>
+    of the
+    <img width="32" height="19" src="img/clip_image028.png"/>
+    b-S3-FAM oligonucleotide solution to the microtube containing the washed magnetic beads, we incubate for
+    <img width="45" height="19" src="img/clip_image072.png"/>
+    , and finally we set the solution on a magnetic strand to pellet the beads and dump the supernatant.
+</p>
+<p>
+    [Step 8] We wash the bead solution from the previous step with
+    <img width="44" height="19" src="img/clip_image108.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer, place the microtube with the wash solution on the magnetic stand for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    to concentrate the beads, and dump the supernatant. We perform this step twice to eliminate the majority of freely diffusing b-S3-FAM oligonucleotide
+    species.
+</p>
+<p>
+    [Step 9] We add
+    <img width="44" height="19" src="img/clip_image108.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer to the bead solution from the previous step (where there should be
+    <img width="68" height="19" src="img/clip_image110.png"/>
+    of pelleted beads, assuming no attrition), and partition this solution into a
+    <img width="36" height="19" src="img/clip_image046.png"/>
+    aliquot and a
+    <img width="44" height="19" src="img/clip_image096.png"/>
+    aliquot, which we label aliquots 1 &amp; 2, respectively. Note that there will be
+    <img width="53" height="19" src="img/clip_image040.png"/>
+    of magnetic beads in the
+    <img width="44" height="19" src="img/clip_image096.png"/>
+    aliquot (aliquot 1) and
+    <img width="53" height="19" src="img/clip_image112.png"/>
+    of beads in the
+    <img width="36" height="19" src="img/clip_image046.png"/>
+    aliquot (aliquot 2). We estimate that
+    <img width="87" height="19" src="img/clip_image114.png"/>
+    of beads should be sufficient to cover the approximately
+    <img width="66" height="19" src="img/clip_image116.png"/>
+    area of a flat-bottomed microplate well, so we should be well in the limit of being able to saturate all potential docking sites in each well with either
+    aliquot. Finally, for this step, we place both aliquots on the magnetic holder for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    to pellet the beads, and then we toss the supernatant.
+</p>
+<p>
+    [Step 10] To both aliquot 1 &amp; 2 from [step 9], we add
+    <img width="44" height="19" src="img/clip_image096.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer.
+</p>
+<p>
+    [Step 11] At this point, we wait until the
+    <img width="27" height="19" src="img/clip_image098.png"/>
+    agitation period for the microplate (see [step 3]) comes to an end, and then we wash all wells of the microplate three times, each time adding and removing
+    a fresh
+    <img width="44" height="19" src="img/clip_image096.png"/>
+    volume of
+    <img width="16" height="19" src="img/clip_image074.png"/>
+    SSCT buffer (using a pipette).
+</p>
+<p>
+    [Step 12] Taking now the two aliquots from [Step 9] (aliquot 1 consisting of a
+    <img width="44" height="19" src="img/clip_image096.png"/>
+    solution containing
+    <img width="53" height="19" src="img/clip_image040.png"/>
+    of beads; aliquot 2 consisting of a
+    <img width="44" height="19" src="img/clip_image096.png"/>
+    solution containing
+    <img width="53" height="19" src="img/clip_image112.png"/>
+    of beads), we add individual
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    volumes of aliquot 1 to wells {1, 2, 3} of the microplate, and individual
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    volumes of aliquot 2 to each of wells {5, 6, 7} of the microplate. To the “blank” wells 4 &amp; 8, we simply add
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer. Here, the assumed amount of beads added to wells {1, 2, 3} is
+    <img width="45" height="19" src="img/clip_image068.png"/>
+    , and the assumed amount of beads added to wells {5, 6, 7} is
+    <img width="53" height="19" src="img/clip_image118.png"/>
+    .
+</p>
+<p>
+    [Step 13] We place the microplate from the preceding steps on a rotator (operating at
+    <img width="37" height="19" src="img/clip_image120.png"/>
+    ), and under these conditions we incubate at room temperature for
+    <img width="43" height="19" src="img/clip_image122.png"/>
+    . Once this incubation period is over, we pipette off the supernatant in each well.
+</p>
+<p>
+    [Step 14] We perform two sequential types of wash processes. For the first wash process, we add
+    <img width="44" height="19" src="img/clip_image096.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image074.png"/>
+    SSCT buffer to each well of the microplate, then pipette off the wash solution. This first wash process is repeated three times. For the second wash
+    process, we do much the same thing, adding
+    <img width="44" height="19" src="img/clip_image096.png"/>
+    to each well of the microplate, however here, we pipette this solution up-and-down five times before finally pipetting off and disposing of the wash
+    buffer.
+</p>
+<p>
+    [Step 15] We add
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer to each well of the microplate.
+</p>
+<p>
+    [Step 16] We take fluorescence scans of the microplate, setting the FLA-5100 scanner (in this case) to take into account the proper excitation and emission
+    spectra for the FAM dye on the 3’ termini of b-S3-FAM oligonucleotides (
+    <img width="95" height="19" src="img/clip_image124.png"/>
+    ::
+    <img width="92" height="19" src="img/clip_image126.png"/>
+    ).
+</p>
+<p>
+    ---
+</p>
+<p>
+    <strong>Results &amp; analysis for experiment [1.2]:</strong>
+</p>
+<p>
+    <strong>Schematic 1: Representation of microplate well specifications.</strong>
+</p>
+<p align="center">
+    <img width="609" height="150" src="img/clip_image128.png"/>
+</p>
+<p>
+    <strong>Schematic 1:</strong>
+    As illustrated in the above diagram, wells 1 and 5 contain b-S3* oligonucleotides, and wells 2 and 6 contain b-S1* oligonucleotides. Here, the assumed
+    amount of beads added to wells {1, 2, 3} is
+    <img width="45" height="19" src="img/clip_image068.png"/>
+    , and the assumed amount of beads added to wells {5, 6, 7} is
+    <img width="53" height="19" src="img/clip_image118.png"/>
+    .
+</p>
+<p align="left">
+    Figure 3: Fluorescent reads for microplate wells with contents indicated in [Schematic 1].
+</p>
+<p align="center">
+    <img width="624" height="153" src="img/clip_image130.png"/>
+</p>
+<p align="left">
+    Fig. 3: Microplate scans from [step 16] of experiment [1.2]. Here, in he context of a
+    <img width="47" height="17" src="img/clip_image080.png"/>
+    volume of
+    <img width="17" height="17" src="img/clip_image082.png"/>
+    SSCT buffer, the FAM fluorescence level in each well is quantitated using an FLA-5100 fluorescence scanner (GE Healthcare Japan), set to an appropriate
+    wavelength for the FAM dye labels (
+    <img width="99" height="17" src="img/clip_image084.png"/>
+    ::
+    <img width="96" height="17" src="img/clip_image086.png"/>
+    ). Note that wells 1 &amp; 5, labeled with b-S3* oligos (i.e. Watson-Crick complements to the b-S3-FAM oligos on all beads) exhibit qualitatively HIGH
+    levels of fluorescence in comparison to all other wells. Moreover, fluorescence levels in wells 1 &amp; 5 appear comparable (qualitatively speaking), this
+    being the case despite the five-fold greater number of beads added to well 5. Note that wells 3 &amp; 7 show slightly elevated levels of fluorescence
+    relative to wells 2 &amp; 6 (which are wells labeled with b-S1* oligos, orthogonal / non-complementary to the b-S3-FAM oligos on all beads). Finally, note
+    that apparent lack of fluorescence in the “blank” wells, where no beads or other dye-labeled oligonucleotides are added (indicating little to no
+    fluorescent background due to the microplate or the
+    <img width="17" height="17" src="img/clip_image082.png"/>
+    SSCT buffer).
+</p>
+<p align="left">
+    Figure 4: Quantitative FAM fluorescence emission in wells {1, 2, 3, 5, 6, 7} from [Schematic 1].
+</p>
+<p align="center">
+    <img width="624" height="375" src="img/clip_image132.png"/>
+</p>
+<p>
+    <strong>Fig. 4: </strong>
+    Here we show quantitative fluorescent reads for wells {1, 2, 3, 5, 6, 7}, all of which are normalized to the A.U. value of well 8. Note here three
+    important points: (1) that the relative fluorescence ratios between wells {1, 2, 3} appear to correspond well to the relative fluorescence ratios exhibited
+    by wells {5, 6, 7} (i.e. the same qualitative behavior is exhibited for both sets of wells); (2) higher A.U. counts for Watson-Crick specific bead capture
+    appear to occur in well 1 relative to well 5 (where one adds
+    <img width="60" height="19" src="img/clip_image134.png"/>
+    vs.
+    <img width="68" height="19" src="img/clip_image136.png"/>
+    of beads); and (3) that wells 3 &amp; 7, where no oligos decorate the surface of the well, show increased fluorescence (presumably corresponding to
+    non-specific bead capture) relative to wells 2 &amp; 6 where non-complementary b-S1* oligos coat the bottom of the well. This is a very interesting
+    phenomena to us, which may be due to electrostatic or other “polymer brush” based effects leading to the non-complementary oligos blocking non-specific
+    binding of beads to the bottom of the microplate well (i.e. in wells 2 &amp; 6). However, further study is of course required to say anything conclusive on
+    this matter (e.g. it’s unclear why well 3 would have higher fluorescence count than well 7 where 5-fold fewer beads were added).
+</p>
+<p>
+    ------
+</p>
+<p>
+    <strong>
+        (1.3) – Investigating the impact of linker (spacer) addition to the bead and well-surface functionalizing oligonucleotides from experiment [2.1].
+    </strong>
+</p>
+<p>
+    <strong>Short summary of experiment: </strong>
+    Here we repeat the basic experiment from <strong>[1.2]</strong> (though without the non-complementary oligo controls), swapping the b-S3*-FAM oligo for an
+    otherwise identical oligo b-pT(20)-S3*-FAM strand with a 20-nt polythymidine linker immediately downstream of the biotin label and immediately upstream of
+    the basic S3* sequence. Likewise, we swap the well plate functionalizing oligo b-S3 with “b-pT(20)-S3, which similarly has a 20nt polythymidine linker
+    between the biotin label and the basic S3 sequence (which is again Watson-Crick complementary to the S3* basic sequences tethered from the beads).
+</p>
+<p>
+    <strong>
+        Schematic 2: Beads attaching to Watson-Crick complements in microplate wells, where microplate well “anchor sequences” are tethered from a
+        surface-conjugated (single-stranded) 20nt polythymidine spacers.
+    </strong>
+</p>
+<p align="center">
+    <img width="528" height="323" src="img/clip_image138.png"/>
+</p>
+<p>
+    <strong>Schematic 2:</strong>
+    This is the basic system we wish to test. Here, b-pT(20)-S3*-FAM oligos modifying the
+    <img width="47" height="19" src="img/clip_image140.png"/>
+    diameter ferromagnetic beads act to anchor the bead (in a sequence specific manner as per the results of <strong>[2.1]</strong>) to b-pT(20)-S3 oligos
+    modifying the surface of a flat-bottomed well.
+</p>
+<p>
+    <strong>
+        Schematic 3: Beads attaching to Watson-Crick complements in microplate wells, where microplate well “anchor sequences” are tethered from a
+        surface-conjugated 20nt dsDNA duplexes.
+    </strong>
+</p>
+<p>
+    <img width="528" height="319" src="img/clip_image142.png"/>
+</p>
+<p>
+    <strong>Schematic 3:</strong>
+    This is the minor variant of <strong>[Schematic 2] </strong>wherein a 20nt polyadenine linker is hybridized to ONLY b-pT(20)-S3 “docking” strands on the
+    surface at the bottom of a microplate well. Critically here, we hybridize the 20nt polyadenine complement to the aforementioned polythymidine linkers PRIOR
+    to biotin conjugation to streptavidin molecules on the well surface.
+</p>
+<p>
+    ---
+</p>
+<p>
+    <strong>Protocol for experiment [1.3]:</strong>
+</p>
+<p>
+    The protocol here is almost that same as that for <strong>[1.2]</strong>, with the following important differences:
+</p>
+<p>
+    (1) We skip the necessary steps where non-complementary b-S1 strands are employed to set up controls for sequence specific bead docking.
+</p>
+<p>
+    (2) We change the density of oligonucleotides during the bead functionalization step from
+    <img width="32" height="19" src="img/clip_image028.png"/>
+    (employed in experiment <strong>[1.2]</strong>) to
+    <img width="43" height="19" src="img/clip_image144.png"/>
+    .
+</p>
+<p>
+    (3) For the experiment shown in <strong>[Schematic 3], </strong>complements to the polythymidine linkers on the microplate well surface are pre-annealed to
+    20nt polyadenine spacer complements PRIOR to well surface functionalization. More specifically, b-pT(20)-S3 oligos and 20nt polyadenine complements are
+    mixed at a 1:1 ration, where each oligo is at a
+    <img width="43" height="19" src="img/clip_image144.png"/>
+    concentration, and annealed using a thermocycler that runs a cooling routine initiating from
+    <img width="31" height="19" src="img/clip_image146.png"/>
+    .
+</p>
+<p>
+    ---
+</p>
+<p>
+    <strong>Results &amp; analysis for experiment [1.3]:</strong>
+</p>
+<p>
+    <strong>
+        Figure 5: Fluorescence scans for kinetic study of b-pT(20)-S3*-FAM oligo functionalized bead docking to wells decorated with b-pT(20)-S3 Watson-Crick
+        complementary oligos.
+    </strong>
+</p>
+<p>
+    <br/>
+    <img width="566" height="185" src="img/clip_image147.jpg"/>
+</p>
+<p>
+    <strong>Fig. 5: </strong>
+    Here we modify [step 13] from the protocol for experiment <strong>[1.2] </strong>to take timepoints at {0, 5, 10, 20, 30, 60} minutes. For each timepoint,
+    we allow
+    <img width="45" height="19" src="img/clip_image068.png"/>
+    of beads the indicated amount of time in minutes to attach to their Watson-Crick complements functionalizing the well surfaces. A timepoint is ended or
+    terminated when one executes the wash steps beginning at the end of [step 13] (again, in the protocol for <strong>[1.2]</strong>). This experiment is used
+    to estimate (presumably sequence specific) bead docking kinetics.
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong>
+        Figure 6: Fluorescence intensity vs. binding time for ssDNA functionalized beads docking to wells decorated with Watson-Crick complementary oligos.
+    </strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p align="center">
+    <img width="621" height="373" src="img/clip_image149.png"/>
+</p>
+<p>
+    <strong>Fig. 6: </strong>
+    Here we show quantitative and normalized values for FAM fluorescence as a function of the amount of time
+    <img width="45" height="19" src="img/clip_image068.png"/>
+of beads is afforded to dock to Watson-Crick complementary oligonucleotides decorating the surface of microplate wells. As discussed in the context of    <strong>[Figure 5]</strong>, this experiment represents an extension of [step 13] from experiment <strong>[1.2]</strong>, where, at the end of a given
+    timepoint, a pipette is used to remove the buffer (and thus, freely diffusing beads) from the microplate. Notice here that we compare two sets of
+experiments: (1) experiments done with 20nt polythymidine sequences tethering bead-complementary sequences to the floor of the microplate wells (    <strong>BLUE</strong>); (2) experiments done with 20nt dsDNA (polythymidine :: polyadenine) sequences tethering the same bead-complementary sequences as in
+    (1) to the floor of the microplate wells (<strong>RED</strong>). Notice also that the single- and double-stranded tethers allow for approximately the same
+    bead binding kinetics.
+</p>
+<p>
+    ------
+</p>
+<p>
+    <strong>(2.1) – Pilot for the creation of bichromatic ferromagnetic beads.</strong>
+</p>
+<p>
+    <strong>Short summary of experiment: </strong>
+    This experiment constitutes our proof-of-principle that photoligation with 5-cyanovinyl-2’-deoxyuridine can work on the surface of beads to direct covalent
+    attachment of oligonucleotides (as evidenced by the ability of the ligated complexes to remain intact during the course of an alkaline denaturation step).
+    In particular, here we label our beads with the b-S3 oligo via the protocol outlined in section <strong>[1.1]</strong>, hybridize the (S1*-S3*) oligo to
+    the b-S3 bead conjugated oligos, and then perform photoligation between <sup>CV</sup>U-S1 and the b-S3 strand. Once this is done, b-S3 and <sup>CV</sup>
+    U-S1 will form a covalent product held to the bead by a biotin-streptavidin bond.
+</p>
+<p>
+    ---
+</p>
+<p>
+    <strong>Protocol for experiment [2.1]:</strong>
+</p>
+<p>
+    [Step 1] We begin by forming separate
+    <img width="43" height="19" src="img/clip_image144.png"/>
+    aliquots of the b-S3, <sup>CV</sup>U-S1, S1*-S3*, &amp; S1*-FAM oligos in
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer. The prefix “<sup>CV</sup>U” is again meant to refer to the chemical group 5-cyanovinyl-2’-deoxyuridine.
+</p>
+<p>
+    [Step 2] We add
+    <img width="36" height="19" src="img/clip_image151.png"/>
+    (
+    <img width="64" height="19" src="img/clip_image153.png"/>
+    ) of magnetic bead solution to a microtube. We set it on a magnetic stand for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    to pellet the magnetic beads, and then we dump the supernatant.
+</p>
+<p>
+    [Step 3] We perform a single washing step for the bead sample from the previous step by adding
+    <img width="44" height="19" src="img/clip_image155.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer to the tube, setting the tube on the magnetic stand for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    to pellet the beads, and then dumping the supernatant fluid.
+</p>
+<p>
+    [Step 4] We add
+    <img width="36" height="19" src="img/clip_image036.png"/>
+    of the b-S3 aliquot (from [step 1]) to the bead solution. We call this mixture: {beads, b-S3}.
+</p>
+<p>
+    [Step 5] We incubate the sample from the previous step ({beads, b-S3}) at room temperature for
+    <img width="45" height="19" src="img/clip_image072.png"/>
+    , then place the tube on the magnetic stand to pellet the beads, and once this is done, we dump the supernatant.
+</p>
+<p>
+    [Step 6] We wash the beads from the sample in the previous step twice (i.e. we wash {beads, b-S3} twice), each time adding
+    <img width="44" height="19" src="img/clip_image155.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image074.png"/>
+    SSCT buffer, then placing the tube on a magnetic stand for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    to pellet the beads and to allow for the dumping of the supernatant.
+</p>
+<p>
+    [Step 7] After the two washes from the previous step, we add another
+    <img width="44" height="19" src="img/clip_image155.png"/>
+    volume of (here)
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer to the tube containing the sample {beads, b-S3}. Set aside
+    <img width="36" height="19" src="img/clip_image157.png"/>
+    in a tube labeled “for positive control”.
+</p>
+<p>
+    [Step 8] We mix together
+    <img width="36" height="19" src="img/clip_image036.png"/>
+    of the S1*-S3* strand at
+    <img width="43" height="19" src="img/clip_image144.png"/>
+    and
+    <img width="36" height="19" src="img/clip_image036.png"/>
+    of the <sup>CV</sup>U-S1 strand at
+    <img width="43" height="19" src="img/clip_image144.png"/>
+    , and anneal the two strands together via the use of a thermocycler (ramping down from
+    <img width="31" height="19" src="img/clip_image146.png"/>
+    to room temperature). We call the tube containing this annealed product: {<sup>CV</sup>U-S1, S1*-S3*}.
+</p>
+<p>
+    [Step 9] We mix together
+    <img width="36" height="19" src="img/clip_image036.png"/>
+    of the {<sup>CV</sup>U-S1, S1*-S3*} tube (where strands are now at
+    <img width="51" height="19" src="img/clip_image159.png"/>
+    ) and tube containing the {beads, b-S3} from [step 7], and incubate this new mixture {beads, b-S3, <sup>CV</sup>U-S1, S1*-S3*} at room temperature for
+    <img width="45" height="19" src="img/clip_image072.png"/>
+    .
+</p>
+<p>
+    [Step 10] Here, we take five
+    <img width="36" height="19" src="img/clip_image157.png"/>
+    aliquots from the {beads, b-S3, <sup>CV</sup>U-S1, S1*-S3*} mixture generated during the previous step, and label these aliquots {0, 30, 60, 90, 120}.
+    Next, we irradiate each aliquot with
+    <img width="63" height="19" src="img/clip_image022.png"/>
+    light for a time period in minutes corresponding to the tube’s label (e.g. the tube with label “60” would be subject to continuous irradiation over the
+    course of an hour).
+</p>
+<p>
+    [Step 11] We wash each aliquot three times, each time applying
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image074.png"/>
+    SSCT, setting the test tubes on the magnetic rack to pellet the beads in each tube, and then pouring off the supernatant in each tube.
+</p>
+<p>
+    [Step 12] We resuspend each tube in
+    <img width="35" height="19" src="img/clip_image161.png"/>
+    NaOH (
+    <img width="54" height="19" src="img/clip_image163.png"/>
+    ) for precisely
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    . To allow for immediate discard of the supernatant after the
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    alkaline shock, we keep all aliquots on the magnetic stand. As an alkaline shock of this severe nature should be sufficient to melt any 20nt or so DNA
+    duplex, it provides us a test for whether or not the <sup>CV</sup>U-S1 oligo is effectively photoligated to the adjacent b-S3 strand as directed by the
+    native version of the {beads, b-S3, <sup>CV</sup>U-S1, S1*-S3*} complex. Note that regardless of what occurs with respect to the photoligation, during the
+    alkaline shock S1*-S3* should dissociate, float away, and become lost forever.
+</p>
+<p>
+    [Step 13] We now perform a wash where we do the following procedure three times: we add
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image074.png"/>
+    SSCT buffer to each aliquot (after dumping of the alkaline solution), we then place the aliquot tubes on the magnetic stand for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    to pellet the beads, and we then discard the supernatant.
+</p>
+<p>
+    [Step 14] To every aliquot we add
+    <img width="36" height="19" src="img/clip_image157.png"/>
+    of the S1*-FAM oligonucleotide and incubate at room temperature for
+    <img width="48" height="19" src="img/clip_image165.png"/>
+</p>
+<p>
+    [Step 15] We repeat exactly [step 13].
+</p>
+<p>
+    [Step 16] We create a positive control by mixing
+    <img width="36" height="19" src="img/clip_image157.png"/>
+    of S1*-FAM at
+    <img width="43" height="19" src="img/clip_image144.png"/>
+    with
+    <img width="36" height="19" src="img/clip_image157.png"/>
+    of the “for positive bead control” solution from [step 7]. Everything should be in
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer for this step.
+</p>
+<p>
+    [Step 17] We add
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    to (now) all six aliquots (the new sixth one being the positive control).
+</p>
+<p>
+    [Step 18] We add each aliquot to individual wells of a microplate (adding only
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    per well).
+</p>
+<p>
+    [Step 19] We scan the microplate from [step 18] using a fluorescence detector for microplates.
+</p>
+<p>
+    ---
+</p>
+<p>
+    <strong>Results &amp; analysis for experiment [2.1]:</strong>
+</p>
+<p>
+    <strong>Figure 7: Fluorescence scans for <sup>CV</sup>U photoligation time point samples.</strong>
+</p>
+<p>
+    <img width="567" height="85" src="img/clip_image166.jpg"/>
+</p>
+<p>
+    <strong>Fig. 7:</strong>
+    If a <sup>CV</sup>U photoligation event is successful, it should uniquely be possible to capture S1*-FAM, and retain this oligo during the multiple washes
+    specified in the experimental protocol. Here we see what appears to be fairly strong evidence of a direct correlation between
+    <img width="63" height="19" src="img/clip_image022.png"/>
+    irradiation times and photoproduct yields.<strong></strong>
+</p>
+<p>
+    <strong>Figure 8: <sup>CV</sup>U photoligation product yield on beads vs. time.</strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p align="center">
+    <img width="482" height="290" src="img/clip_image168.png"/>
+</p>
+<p>
+    <strong>Fig. 8: </strong>
+    Here, extending the discussion from <strong>[Figure 7] </strong>we see a clear linear relationship (with a coefficient of determination
+    <img width="79" height="19" src="img/clip_image170.png"/>
+    ) between irradiation time and <sup>CV</sup>U crosslinking yields. This relationship may of course not extend considerably beyond
+    <img width="68" height="19" src="img/clip_image172.png"/>
+    of irradiation time.
+</p>
+<p>
+    ------
+</p>
+<p>
+    <strong>(2.2) – Determination of absolute concentrations from FLA-5100 (GE Healthcare Japan) plate reader fluorescence measurements.</strong>
+</p>
+<p>
+    <strong>Short summary of experiment: </strong>
+    In all previous experiments {[1.1], [1.2], [1.3], &amp; [2.1]} we’ve spoken of FLA-5100 (GE Healthcare Japan) microplate scanner fluorescence measurements
+    in terms of “Arbitrary Units” (or “AU”). Here we perform measurements to precisely determine the relationship between the concentration of FAM- or Cy5-
+    labeled oligonucleotides, and these fluorescence “AU” units (for this particular scanner &amp; with these particular plates). All this will require will be
+    setting up wells on the microplate with various concentrations of FAM and Cy5, recording relative fluorescence measurements, and doing some straightforward
+    linear regression analysis.
+</p>
+<p>
+    ---
+</p>
+<p>
+    <strong>Protocol for experiment [2.2]:</strong>
+</p>
+<p>
+    [Step 1] We begin by setting up individual and separate
+    <img width="44" height="19" src="img/clip_image174.png"/>
+    volumes of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffered FAM and Cy5 labeled oligonucleotides, at concentrations of: {
+    <img width="24" height="19" src="img/clip_image176.png"/>
+    nM,
+    <img width="16" height="19" src="img/clip_image178.png"/>
+    nM,
+    <img width="24" height="19" src="img/clip_image176.png"/>
+    pM,
+    <img width="16" height="19" src="img/clip_image178.png"/>
+    pM}.
+</p>
+<p>
+    [Step 2] We add
+    <img width="44" height="19" src="img/clip_image096.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer to each well of the microplate, and pipette off the volume. We repeat this step a total of three times.
+</p>
+<p>
+    [Step 3] To individual microplate wells, we add
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    of each of the solutions prepared in [Step 1].
+</p>
+<p>
+    [Step 4] We scan the plate with the FLA-5100 scanner.
+</p>
+<p>
+    ---
+</p>
+<p>
+    <strong>Results &amp; analysis for experiment [1.3]:</strong>
+</p>
+<p>
+    <strong>Figure 9: Direct FLA-5100 scans of microplate wells with varying concentrations of FAM (top set) &amp; Cy5 (bottom set).</strong>
+</p>
+<p>
+    FAM SCANS (BELOW):
+</p>
+<p>
+    <img width="567" height="187" src="img/clip_image179.jpg"/>
+</p>
+<p>
+    CY5 SCANS (BELOW):
+</p>
+<p>
+    <img width="566" height="189" src="img/clip_image180.jpg"/>
+</p>
+<p>
+    <strong>Fig. 9: </strong>
+    These are original microplate well scans from the FLA-5100 fluorescence scanner (GE Healthcare Japan). Note that there are four rows of wells here, the top
+    two of which are scans for FAM-labeled oligos (here, S1*-FAM), and the bottom two of which are scans for Cy5-labeled oligos (here, S2*-Cy5). Now, moving
+    from left to right, the overlaid (RED) values represent the concentration (in units: nanomolar) for the dye label in each well: {
+    <img width="24" height="19" src="img/clip_image176.png"/>
+    nM,
+    <img width="16" height="19" src="img/clip_image178.png"/>
+    nM,
+    <img width="24" height="19" src="img/clip_image176.png"/>
+    pM,
+    <img width="16" height="19" src="img/clip_image178.png"/>
+    pM}. Wells at position
+    <img width="12" height="19" src="img/clip_image182.png"/>
+    in the first two rows, or in the last two rows, are identical samples of one-another, which are averaged for the collection of a data point at a particular
+    FAM or Cy5 label concentration.
+</p>
+<p>
+    <strong>Figure 10: The relationship between FLA-5100 recorded FAM fluorescence in the well of a plate and its actual molar concentration.</strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p align="center">
+    <img width="603" height="363" src="img/clip_image184.png"/>
+</p>
+<p>
+    <strong>Fig. 10: </strong>
+    Here we use data collected from plate measurements (see <strong>[Figure 9]</strong>) to extrapolate, via simple linear regression, the relationship between
+    the FLA-5100’s units of AU for the FAM dye and the dye’s actual molar concentration. Specifically, and noting the impressive coefficient of correlation we
+    achieve, we suggest the following relationship:
+</p>
+<p>
+    <img width="249" height="35" src="img/clip_image186.png"/>
+</p>
+<p>
+    <strong>Figure 11: The relationship between FLA-5100 recorded Cy5 fluorescence in the well of a plate and its actual molar concentration.</strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p align="center">
+    <img width="602" height="361" src="img/clip_image188.png"/>
+</p>
+<p>
+    <strong>Fig. 11: </strong>
+    Just as in <strong>[Figure 10]</strong>, we use data collected from plate measurements (see <strong>[Figure 9]</strong>) to extrapolate, via simple linear
+    regression, the relationship between the FLA-5100’s units of AU for the Cy5 dye and the dye’s actual molar concentration. Specifically, and noting the
+    impressive coefficient of correlation we achieve, we suggest the following relationship:
+</p>
+<p>
+    <img width="255" height="35" src="img/clip_image190.png"/>
+</p>
+<p>
+    Also notice the very different definitions for AU depending on the choice of dye and/or the dye emission/excitation spectrum --- e.g. here one unit of AU
+    for TAM is worth
+    <img width="42" height="19" src="img/clip_image192.png"/>
+    units of AU for Cy5. The lesson here is that one must always calibrate their scanner or generate a reference for any novel dye choice.
+</p>
+<p>
+    ------
+</p>
+<p>
+    <strong>(2.3) – A first light: proof of the asymmetric bead functionalization protocol.</strong>
+</p>
+<p>
+    <strong>Short summary of experiment: </strong>
+    Here we initiate the first pilot experiment for the creation of ferromagnetic (Fe<sub>2</sub>O<sub>3</sub>) beads with “bichromatic” features. In
+    particular, here we are able to show that
+    <img width="63" height="19" src="img/clip_image022.png"/>
+    irradiation --- at power densities and for durations necessary to allow for 5-cyanovinyl-2’-deoxyuridine (<sup>CV</sup>U) photocrosslinking to a nucleic
+    acid pyrimidine base --- can be effectively blocked by the thickness (
+    <img width="47" height="19" src="img/clip_image140.png"/>
+    ) and opacity of the beads we have thus far been working with, allowing us to asymmetrically functionalize their hemispheres (and by this action making
+    them “bichromatic”).
+</p>
+<p>
+    -
+</p>
+<p>
+    In a bit more detail, we first use biotin-streptavidin interactions to decorate the flat-bottomed surfaces of microplate wells with the b-pT(20)-S3* oligo
+(consisting of the basic S3 sequence on a 20nt polythymidine tether), we likewise prepare b-pT(20)-S3 labeled beads (as per experiment    <strong>[1.1]</strong>,<strong> </strong>if one swaps<strong> </strong>b-pT(20)-S3 for b-S3-FAM), and then sequence specifically dock these beads to the
+    bottom of a subset of the wells in the microplate (in the same spirit as experiment <strong>[1.2]</strong>). Once we’ve sequence specifically dock the
+    beads to the bottom of the microplate wells, we can then hybridize on a pre-annealed {S1*-S3* :: <sup>CV</sup>U-S1} complex.
+</p>
+<p>
+    And this is where the magic comes in. Micron-sized metallic colloids are, in most cases, quite a bit better than nanoscale objects at scattering and
+    absorbing light (the latter property due to the finely spaced energy levels in the conduction band for most metals). Thus, if we irradiate the beads with a
+    top-down source of directional (not coherent)
+    <img width="63" height="19" src="img/clip_image022.png"/>
+    near-UV light, we’ll form a covalent linkage between <sup>CV</sup>U-S1 and the 3’ termini of the b-pT(20)-S3 sequence on the beads --- but ONLY on the
+    bead’s more exposed hemisphere pointing away from the surface!
+</p>
+<p>
+    Now, once the beads have a specific sequence on their one hemisphere, microplate wells (in just the same manner as before) can be prepared to dock these
+    beads only on that one side. Thus, the formally shielded side will now flip up towards the
+    <img width="63" height="19" src="img/clip_image022.png"/>
+    source. At this point, we decided to form a pre-annealed {S2*-S3* :: <sup>CV</sup>U-S2} complex, and demonstrate (ultimately using S2*-Cy5 as a probe) that
+    the opposite hemisphere to the one formally functionalized could be specifically decorated with a new oligonucleotide (i.e. <sup>CV</sup>U-S2).
+</p>
+<p>
+    ---
+</p>
+<p>
+    <strong>Protocol for experiment [2.3]:</strong>
+</p>
+<p>
+    [Step 1] We form
+    <img width="43" height="19" src="img/clip_image144.png"/>
+    stocks (in
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer) of the following oligonucleotides: {b-pt(20)-S3, ,b-pt(20)-S3*, S3*-S1*, S3*-S2*, cvU-S1, cvU-S2, S1*-FAM, S2*-Cy5, b-pt(20)-S1*, b-S1*,
+    b-S2*, b-S3-FAM}.
+</p>
+<p>
+    [Step 2] We label a set of four microtubes with the labels: {3-44, 3-16, 18-29, 31-44}.
+</p>
+<p>
+    [Step 3] We prewash the individual wells of a flat-bottomed (streptavidinated) microplate with
+    <img width="44" height="19" src="img/clip_image096.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer (pipetting off the individual volumes after their application).
+</p>
+<p>
+    [Step 4] To each well on the microplate, we add
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    of the b-pT(20)-S3* oligo stock at
+    <img width="43" height="19" src="img/clip_image144.png"/>
+    (i.e. we add
+    <img width="53" height="19" src="img/clip_image194.png"/>
+    of this oligo to each well of the microplate).
+</p>
+<p>
+    [Step 5] We allow the plate to incubate at room temperature (
+    <img width="95" height="19" src="img/clip_image196.png"/>
+    ) for
+    <img width="45" height="19" src="img/clip_image072.png"/>
+    , spinning the plate at
+    <img width="37" height="19" src="img/clip_image120.png"/>
+    during this time.
+</p>
+<p>
+    [Step 6] Once the incubation from the previous step is finished, we wash each well by adding
+    <img width="44" height="19" src="img/clip_image096.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image074.png"/>
+    SSCT buffer, pipette off the wash solution. We repeat this process three times.
+</p>
+<p>
+    [Step 7] We take a
+    <img width="36" height="19" src="img/clip_image198.png"/>
+    solution of magnetic beads (Magnosphere(TM) MS300/Streptavidin; JSR Lifesciences) (
+    <img width="79" height="19" src="img/clip_image200.png"/>
+    of beads), pellet the beads by placing this volume on our magnetic stand for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    , then toss the supernatant.
+</p>
+<p>
+    [Step 8] We add a volume of
+    <img width="36" height="19" src="img/clip_image202.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image074.png"/>
+    SSCT buffer to the pelleted beads from the previous step, pipette this volume up and down
+    <img width="16" height="19" src="img/clip_image204.png"/>
+    times, pellet the beads again by setting the volume on a magnetic stand for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    , then we toss the supernatant. We repeat this process a total of three times.
+</p>
+<p>
+    [Step 9] We add
+    <img width="36" height="19" src="img/clip_image198.png"/>
+    of the b-pt(20)-S3 solution, at
+    <img width="43" height="19" src="img/clip_image144.png"/>
+    concentration, to the pelleted beads from the previous step, and incubate the mix for
+    <img width="45" height="19" src="img/clip_image072.png"/>
+    at room temperature.
+</p>
+<p>
+    [Step 10] We set the microtube from the previous step on our magnetic stand for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    , pelleting the beads and allowing us to toss the supernatant.
+</p>
+<p>
+    [Step 11] We add a volume of
+    <img width="36" height="19" src="img/clip_image202.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer (NOT
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer as in [step 8]) to the pelleted beads from the previous step, pipette this volume up and down
+    <img width="16" height="19" src="img/clip_image204.png"/>
+    times, pellet the beads again by setting the volume on a magnetic stand for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    , then we toss the supernatant. We repeat this process a total of three times.
+</p>
+<p>
+    [Step 12] We
+    <img width="44" height="19" src="img/clip_image206.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer to the pelleted beads from the previous step, and transfer
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    of this volume to each of two wells on the microplate.
+</p>
+<p>
+    [Step 13] Rotate the plate at
+    <img width="37" height="19" src="img/clip_image120.png"/>
+    for
+    <img width="45" height="19" src="img/clip_image208.png"/>
+    at room temperature (
+    <img width="95" height="19" src="img/clip_image196.png"/>
+    ).
+</p>
+<p>
+    [Step 14] Wash each (used) well of the plate three times with
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    per well of
+    <img width="16" height="19" src="img/clip_image074.png"/>
+    SSCT buffer (pipetting each volume off after its application).
+</p>
+<p>
+    [Step 15] We mix together
+    <img width="36" height="19" src="img/clip_image036.png"/>
+    of S1*-S3* at
+    <img width="43" height="19" src="img/clip_image144.png"/>
+    and
+    <img width="36" height="19" src="img/clip_image036.png"/>
+    of <sup>CV</sup>U-S1 at
+    <img width="43" height="19" src="img/clip_image144.png"/>
+    . A thermal anneal is then conducted using a thermocycler, where a ramp initiated at
+    <img width="31" height="19" src="img/clip_image146.png"/>
+    returns to room temperature over the course of
+    <img width="45" height="19" src="img/clip_image072.png"/>
+    .
+</p>
+<p>
+    [Step 16] We add
+    <img width="36" height="19" src="img/clip_image210.png"/>
+    of the annealed solution from the previous step to
+    <img width="44" height="19" src="img/clip_image212.png"/>
+    of
+    <img width="16" height="19" src="img/clip_image030.png"/>
+    SSCT buffer, and partition
+    <img width="44" height="19" src="img/clip_image050.png"/>
+    volumes of this solution to the two “in use” wells on the microplate (which should have been the washed wells from [step 14]).
+</p>
+<p>
+    [Step 17] We shake &amp; rotate the plate at
+    <img width="37" height="19" src="img/clip_image120.png"/>
+    for
+    <img width="45" height="19" src="img/clip_image208.png"/>
+    at room temperature (
+    <img width="95" height="19" src="img/clip_image196.png"/>
+    ), allowing the S1*-S3* and b-pt(20)-S3 strands to hybridize.
+</p>
+<p>
+    [Step 18] We irradiate the wells on the microplate with
+    <img width="63" height="19" src="img/clip_image022.png"/>
+    light for
+    <img width="16" height="19" src="img/clip_image214.png"/>
+    minutes at room temperature (
+    <img width="95" height="19" src="img/clip_image196.png"/>
+    ). This should lead to photocrosslinking (via [2+2] photocycloaddition) of the <sup>CV</sup>U-S1 oligo to the 3’-most base of the b-pt(20)-S3 oligo (which
+    must be a pyrimidine, and is in this case deoxythymidine).
+</p>
+<p>
+    [Step 19] We pipette off the volume of the irradiated wells from [step 18], and perform an alkaline “shock” by adding a
+    <img width="35" height="19" src="img/clip_image161.png"/>
+    NaOH buffer with
+    <img width="45" height="19" src="img/clip_image216.png"/>
+    NaOH. This alkaline shock will denature all DNA, and will presumably begin to denature the streptavidin coupling the biotin-labeled oligos to the bead
+    surface --- so it’s important to only have the beads exposed to alkaline conditions for
+    <img width="37" height="19" src="img/clip_image042.png"/>
+    . Once this minute has passed, pipette the solution out of the well and transfer the beads to a microtube.
+</p>
+<p>
+    Now:
+</p>
+<p>
+    ① Remove S1*-S1 and S3*-S3 binding by alkaline denaturation.
+</p>
+<p>
+    ② Transfer the beads to a microtube.
+</p>
+<p>
+    ③ Wash beads in the way of ⑦. The amount of 2 x SSCT buffer is 100 μL. Now,S1 strand would be immobilized on the hemisphere of beads.
+</p>
+<p>
+    ④ Set microtubes to a magnet for 1 minute, and dump supernatant fluid.
+</p>
+<p>
+    ⑤ Subject alkaline denaturation.
+</p>
+<p>
+    ⑥ Wash beads in the way of ⑳. Here, the amount of 2 x SSCT buffer is 100 μL.
+</p>
+<p>
+    ⑦ Immobilize b-S1* strand to a well of the streptavidin plate in the way of ③-⑥.
+</p>
+<p>
+    ⑧ Transefer the beads to the well with b-S1* strand.
+</p>
+<p>
+    ⑨ Shake the plate for 1 hour by 70 rpm at room temperature. A and cA strand hybridize.
+</p>
+<p>
+    ⑩ Anneal 10 μL of S2*-S3* and 10 μL of cvU-S2 strand for 10 minutes.
+</p>
+<p>
+    ⑪ Add 10 μl/well of 27 to the wells with beads.
+</p>
+<p>
+    ⑫ Shake the plate for 10 minute by 70 rpm at room temperature.
+</p>
+<p>
+    ⑬ Shed 366 nm of UV light for 20 minutes to the well at room temperature.
+</p>
+<p>
+    ⑭ Remove S1*-S1 and S2*-S2 binding by alkaline denaturation.
+</p>
+<p>
+    ⑮ Transfer the beads to microtubes.
+</p>
+<p>
+    ⑯ Wash beads in the way of ⑳. Here, the amount of 2 x SSCT buffer is 100 μL.
+</p>
+<p>
+    ⑰ Add 10 μL/well of S2*-Cy5 to the wells of the plate.
+</p>
+<p>
+    ⑱ Shake the plate for 10 minutes by 70 rpm at room temperature.
+</p>
+<p>
+    ⑲ Wash the beads in the way of ⑳.
+</p>
+<p>
+    ⑳ Add 100 μL/well of 5 x SSCT buffer.
+</p>
+<p>
+    21 Immobilize b-S1* and b-S2* on the distinctive wells of the streptavidin plate in the way of ③-⑥.
+</p>
+<p>
+    22 Add epual amounts of Sample and Negative control to the wells with b-S1* and b-S2*.
+</p>
+<p>
+    23 Shake the plate for 1 hour by 70 rpm at room temperature.
+</p>
+<p>
+    24 Add 10 μL of S1*-FAM and S2*-Cy5, and 80 μL of 5 x SSCT buffer to each well of the plate.
+</p>
+<p>
+    25 Shake the plate for 10 minutes by 70 rpm at room temperature.
+</p>
+<p>
+    26 Wash each well of the plate three times with 300 μL of 2 x SSCT buffer.
+</p>
+<p>
+    27 Detect the intensity of fluorescence with the fluorescent microplate reader.
+</p>
+<p>
+    <strong>Figure 12: Illustration of “surface effect”-based hindrance of FAM probe hybridization to “bichromatic” ferromagnetic beads.</strong>
+</p>
+<p align="center">
+    <img width="550" height="381" src="img/clip_image218.png"/>
+</p>
+<p align="center">
+    <img width="476" height="124" src="img/clip_image220.jpg"/>
+</p>
+<p>
+    Fig. 12 ::
+</p>
+<p>
+    (TOP) :: Here we illustrate the influence of surface effects on the hybridization rate of S1*-FAM oligonucleotides to one of the two hemispheres of an
+    asymmetrically functionalized magnetic bead bound to a surface via one of its hemispheres. Specifically, if the bead is bound in a streptavidin coated well
+    decorated with b-S1* oligonucleotides (in the manner of experiment [1.2]) (LEFT), the FAM signal from S1*-FAM probes is depressed relative to the FAM
+    signal obtained when beads are coupled to a microarray surface coated with b-S2* strands (RIGHT). Provided the large (
+    <img width="47" height="17" src="img/clip_image222.png"/>
+    ) diameter of the beads under consider in this study, it is unclear why such a significant effect is observed!
+</p>
+<p>
+    <strong>(BOTTOM) ::</strong>
+    Actual data for microplate scans with equal-size collection and averaging areas indicated with (<strong>BLUE</strong>) circles. Debris and well edges on
+    the microplate are avoided to the extent possible.
+</p>
+<p>
+    <strong>Figure 13: Illustration of “surface effect”-based hindrance of Cy5 probe hybridization to “bichromatic” ferromagnetic beads.</strong>
+</p>
+<p align="center">
+    <img width="554" height="382" src="img/clip_image224.png"/>
+</p>
+<p align="center">
+    <img width="477" height="125" src="img/clip_image226.jpg"/>
+</p>
+<p>
+    Fig. 13 ::
+</p>
+<p>
+    (TOP) :: Here we illustrate the influence of surface effects on the hybridization rate of S2*-Cy5 oligonucleotides to one of the two hemispheres of an
+    asymmetrically functionalized magnetic bead bound to a surface via one of its hemispheres. Specifically, if the bead is bound in a streptavidin coated well
+    decorated with b-S2* oligonucleotides (in the manner of experiment [1.2]) (RIGHT), the Cy5 signal from S2*-Cy5 probes is depressed relative to the Cy5
+    signal obtained when beads are coupled to a microarray surface coated with b-S1* strands (LEFT). Provided the large (
+    <img width="47" height="17" src="img/clip_image222.png"/>
+    ) diameter of the beads under consider in this study, it is unclear why such a significant effect is observed!
+</p>
+<p>
+    <strong>(BOTTOM) ::</strong>
+    Actual data for microplate scans with equal-size collection and averaging areas indicated with (<strong>BLUE</strong>) circles. Debris and well edges on
+    the microplate are avoided to the extent possible.
+</p>
+</div>    
+</body>
+</html>
