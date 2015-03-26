@@ -9,7 +9,7 @@ p{font-family:"Arial";}
 	margin:0px auto;
 	width:960px;
 	background-color:#000000, #000000;
-	background-image:url("../img/bamboo.png"), url("../img/shimashima.png");
+	background-image:url("../img/bamboo.png"), url("../img/shimashima.gif");
 	background-repeat:no-repeat, repeat-y; 
 	background-position:0px 20px, 0px 20px;
 	padding-bottom:8px;

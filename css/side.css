@@ -47,5 +47,7 @@ ul.sidemenu li a:hover{
 	background-color:#FFFFFF;
 	border-radius:15px 15px 15px 15px/ 15px 15px 15px 15px;
 	padding-top:15px;
-	padding-bottom:40px;
+	padding-bottom:30px;
 }
+
+div#down { padding-bottom:15px;}
