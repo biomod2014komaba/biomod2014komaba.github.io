@@ -120,7 +120,9 @@ ol.footnote li:before {
     counter-increment:li; /* Increment the counter by 1 */
 }
 
-	
+/*段落要素として区切るべきところを改行で区切ってしまった。反省。
+:first-child :last-child
+*/
 	
 
 
