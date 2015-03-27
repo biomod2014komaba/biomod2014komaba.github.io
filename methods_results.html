@@ -13,10 +13,11 @@ $(function () {
 	$("ul.sub").hide();
 	
 	$("ul.sidemenu > li").click(function(){ /*mouseoutは子要素に移動した時でも発動する*/
-		$("ul.sub",this).toggle();//thisの子要素のul
+		$("ul.sub").hide();
+		$("ul.sub",this).show();//thisの子要素のu
 	});
 	
-	$(".sidemenu li ul li a").on("click",function(){
+	$(".sidemenu li ul li a").on("click",function(e){
 		var index = $(".sidemenu li ul li a").index(this);
 	
 		var p = $(".title").eq(index).offset().top - 60;
@@ -26,6 +27,8 @@ $(function () {
 	}
 
 	setTimeout(scr,50);
+	
+	e.stopPropagation();//　バブリング止め
 
 	});//onclick
 });
