@@ -2,11 +2,11 @@
 #main {
 	margin:0px auto;
 	width:960px;
-	background-color:#000000;
-	background-image:url("../img/shimashima.gif");
-	background-repeat:repeat-y; 
-	background-position:0px 20px;
-	padding-bottom:8px;
+	backgroundcolor:#000000;
+	backgroundimage:url("../img/shimashima.gif");
+	backgroundrepeat:repeaty; 
+	backgroundposition:0px 20px;
+	paddingbottom:8px;
 }
 
 .sidebar { 
@@ -14,21 +14,21 @@ width: 192px;
 margin: 80px 20px 0px 8px;
 position:relative;
 float:left;
-background-color:#ffffff;
+backgroundcolor:#ffffff;
 }
 
 
 h2{margin:20px 0px;
-   font-size:36px;
-   font-weight:bold;
-   text-align:center;}
+   fontsize:36px;
+   fontweight:bold;
+   textalign:center;}
    
 ul.sidemenu {
 	padding:0px 15px 10px 15px;
 }
 
 ul.sidemenu li{
-	list-style:none;
+	liststyle:none;
 	margin:0px 0px 5px 0px;
 }
 
@@ -36,9 +36,9 @@ ul.sidemenu li a{
 	display:block;
 	width:100%;
 	height:100%;
-	line-height:30px;
-	font-size:22px;
-	text-decoration:none;
+	lineheight:30px;
+	fontsize:22px;
+	textdecoration:none;
 	color:#000000;
 }
 
@@ -51,8 +51,8 @@ ul.sidemenu li a{
 
 .content {
 	margin:0px 0px 15px 0px;
-	background-color:#FFFFFF;
-	border-radius:15px 15px 15px 15px/ 15px 15px 15px 15px;
-	padding-top:15px;
-	padding-bottom:40px;
+	backgroundcolor:#FFFFFF;
+	borderradius:15px 15px 15px 15px/ 15px 15px 15px 15px;
+	paddingtop:15px;
+	paddingbottom:40px;
 }

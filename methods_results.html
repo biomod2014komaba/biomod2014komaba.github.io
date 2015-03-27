@@ -8,10 +8,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="./js/jquery.mobile.custom.min.js"></script>
-<script src="./js/jump.js"></script>
+<script>
+$(function () {
+	$("ul.sub").hide();
+	
+	$("ul.sidemenu > li").click(function(){ /*mouseoutは子要素に移動した時でも発動する*/
+		$("ul.sub",this).toggle();//thisの子要素のul
+	});
+	
+	$(".sidemenu li ul li a").on("click",function(){
+		var index = $(".sidemenu li ul li a").index(this);
+	
+		var p = $(".title").eq(index).offset().top - 60;
+		
+	function scr () {
+    $('html,body').animate({ scrollTop: p }, 'fast');
+	}
+
+	setTimeout(scr,50);
+
+	});//onclick
+});
+
+</script>
+/* 細かくcssを分けて、どこに何があるか分からなくなったら意味ないので、cssはリセットと文字サイズやメニューなど全ページ共通のコモンと、各ページ専用の３つで対応する。*/ 
 <link href="./css/reset.css" rel="stylesheet">
 <link href="./css/common.css" rel="stylesheet">
-<link href="./css/side.css" rel="stylesheet">
+<link href="./css/mere.css" rel="stylesheet">
 </head>
 <body>
     <ul class="menu clearfix">
@@ -25,25 +48,48 @@
  <div class="sidebar">
     <h2>contents</h2>
     <ul class="sidemenu">
-    	<li><a>materials</a></li>
-    	<li><a>1.1 - method</a></li>
-        <li><a>1.1 - protocol</a></li>
-        <li><a>1.1 - result</a><li>
-        <li><a>1.2 - method</a></li>
-        <li><a>1.2 - protocol</a></li>
-        <li><a>1.2 - result</a></li>
-      	<li><a>1.3 - method</a></li>      
-        <li><a>1.3 - protocol</a></li>       
-        <li><a>1.3 - result</a><li>
-        <li><a>2.1 - method</a></li>
-        <li><a>2.1 - protocol</a></li>
-        <li><a>2.1 - result</a></li>
-        <li><a>2.2 - method</a></li>
-        <li><a>2.2 - protocol</a></li>
-        <li><a>2.2 - result</a><li>
-        <li><a>2.3 - method</a></li>
-        <li><a>2.3 - protocol</a></li>
-        <li><a>2.3 - result</a><li>
+        <li><a>1.1</a>
+        	<ul class="sub">
+    			<li><a>method</a></li>
+        		<li><a>protocol</a></li>
+        		<li><a>result</a></li>
+        	</ul>
+        </li>
+        <li><a>1.2</a>
+        	<ul class="sub">
+    			<li><a>method</a></li>
+        		<li><a>protocol</a></li>
+        		<li><a>result</a></li>
+        	</ul>
+        </li>
+        <li><a>1.3</a>
+        	<ul class="sub">
+    			<li><a>method</a></li>
+        		<li><a>protocol</a></li>
+        		<li><a>result</a></li>
+        	</ul>
+        </li>
+         <li><a>2.1</a>
+        	<ul class="sub">
+    			<li><a>method</a></li>
+        		<li><a>protocol</a></li>
+        		<li><a>result</a></li>
+        	</ul>
+        </li>
+        <li><a>2.2</a>
+        	<ul class="sub">
+    			<li><a>method</a></li>
+        		<li><a>protocol</a></li>
+        		<li><a>result</a></li>
+        	</ul>
+        </li>
+        <li><a>2.3</a>
+        	<ul class="sub">
+    			<li><a>method</a></li>
+        		<li><a>protocol</a></li>
+        		<li><a>result</a></li>
+        	</ul>
+        </li>       
     </ul>
   </div>   
  
@@ -57,9 +103,7 @@
 <p>
     <strong></strong>
 </p>
-<p>
-    ----------------------------------------------------------------------
-</p>
+<p></p>
 <p>
     <strong></strong>
 </p>
@@ -152,22 +196,18 @@
 <p>
 2. Aviles, M. O., Ebner, A. D., Ritter, J. A. Ferromagnetic seeding for the magnetic targeting of drugs and radiation in capillary beds.    <em>J. Magn. Magn. Mater. </em><strong>310</strong>(1), pp. 131 - 144 (2007).
 </p>
-<p>
-    ----------------------------------------------------------------------
-</p>
+<p></p>
 <p>
     <strong></strong>
 </p>
 <p>
     <strong>Research Protocol</strong>
 </p>
-<p>
-    ------------
-</p> -->
+<p></p> -->
 <p><strong>download:<a href="./word/mr.docx">original word file</a></strong></p>
 </div>
 <div class="content">
-<p class="title">
+<p>
     <strong>Materials ::</strong>
 </p>
 <p>
@@ -233,18 +273,14 @@
     <img width="12" height="19" src="img/clip_image024.png"/>
     ) for the photocrosslinking reaction).
 </p>
-<p>
-    ----------------
-</p>
+<p></p>
 <p>
     <strong>Methods ::</strong>
 </p>
 <p>
     <strong>(Experiment Set 1): Demonstration and quantitation of magnetic bead capture in microplate wells via DNA binding interactions.</strong>
 </p>
-<p>
-    ------
-</p>
+<p></p>
 <p class="title">
     <strong>(1.1) - Competitive binding assay between b-S3 &amp; b-S3-FAM oligonucleotides for fluorescence readout calibration.</strong>
 </p>
@@ -263,9 +299,7 @@
     place fluorescence measurements in the linear range of the detector / scanner we employ (i.e. measurements will fall above the detector noise floor and
     below the point of detector saturation).
 </p>
-<p>
-    ---
-</p>
+<p></p>
 <p class="title">
     <strong>Protocol for experiment [1.1]:</strong>
 </p>
@@ -376,9 +410,7 @@
     [Step 9] We employ a fluorescent microplate reader FLA-5100 (GE Healthcare Japan) to quantitate the fluorescence level of FAM in each well of the
     microplate.
 </p>
-<p>
-    ---
-</p>
+<p></p>
 <p class="title">
     <strong>Results &amp; analysis for experiment [1.1]:</strong>
 </p>
@@ -429,9 +461,7 @@
     ), indicating a lack of saturation at upper-end values of the b-S3-FAM ratio (10:0) during the magnetic bead labeling step, as well as the sensitivity to
     beads labeled at the lower-end (1:9) ratio of b-S3-FAM.
 </p>
-<p>
-    ------
-</p>
+<p></p>
 <p class="title">
     <strong>(1.2) – Confirmation of sequence-specific bead docking in microplate wells.</strong>
 </p>
@@ -447,9 +477,7 @@
     <img width="16" height="19" src="img/clip_image030.png"/>
     SSCT buffer).
 </p>
-<p>
-    ---
-</p>
+<p></p>
 <p class="title">
     <strong>Protocol for experiment [1.2]:</strong>
 </p>
@@ -639,9 +667,7 @@
     <img width="92" height="19" src="img/clip_image126.png"/>
     ).
 </p>
-<p>
-    ---
-</p>
+<p></p>
 <p class="title">
     <strong>Results &amp; analysis for experiment [1.2]:</strong>
 </p>
@@ -709,9 +735,7 @@
     binding of beads to the bottom of the microplate well (i.e. in wells 2 &amp; 6). However, further study is of course required to say anything conclusive on
     this matter (e.g. it’s unclear why well 3 would have higher fluorescence count than well 7 where 5-fold fewer beads were added).
 </p>
-<p>
-    ------
-</p>
+<p></p>
 <p class="title">
     <strong>
         (1.3) – Investigating the impact of linker (spacer) addition to the bead and well-surface functionalizing oligonucleotides from experiment [2.1].
@@ -755,9 +779,7 @@
     surface at the bottom of a microplate well. Critically here, we hybridize the 20nt polyadenine complement to the aforementioned polythymidine linkers PRIOR
     to biotin conjugation to streptavidin molecules on the well surface.
 </p>
-<p>
-    ---
-</p>
+<p></p>
 <p class="title">
     <strong>Protocol for experiment [1.3]:</strong>
 </p>
@@ -783,9 +805,7 @@
     <img width="31" height="19" src="img/clip_image147.png"/>
     .
 </p>
-<p>
-    ---
-</p>
+<p></p>
 <p class="title">
     <strong>Results &amp; analysis for experiment [1.3]:</strong>
 </p>
@@ -898,9 +918,7 @@ experiments: (1) experiments done with 20nt polythymidine sequences tethering be
     (1) to the floor of the microplate wells (<strong>RED</strong>). Notice also that the single- and double-stranded tethers allow for approximately the same
     bead binding kinetics.
 </p>
-<p>
-    ------
-</p>
+<p></p>
 <p class="title">
     <strong>(2.1) – Pilot for the creation of bichromatic ferromagnetic beads.</strong>
 </p>
@@ -912,9 +930,7 @@ experiments: (1) experiments done with 20nt polythymidine sequences tethering be
     the b-S3 bead conjugated oligos, and then perform photoligation between <sup>CV</sup>U-S1 and the b-S3 strand. Once this is done, b-S3 and <sup>CV</sup>
     U-S1 will form a covalent product held to the bead by a biotin-streptavidin bond.
 </p>
-<p>
-    ---
-</p>
+<p></p>
 <p class="title">
     <strong>Protocol for experiment [2.1]:</strong>
 </p>
@@ -1065,9 +1081,7 @@ experiments: (1) experiments done with 20nt polythymidine sequences tethering be
 <p>
     [Step 19] We scan the microplate from [step 18] using a fluorescence detector for microplates.
 </p>
-<p>
-    ---
-</p>
+<p></p>
 <p class="title">
     <strong>Results &amp; analysis for experiment [2.1]:</strong>
 </p>
@@ -1101,10 +1115,7 @@ experiments: (1) experiments done with 20nt polythymidine sequences tethering be
     <img width="68" height="19" src="img/clip_image173.png"/>
     of irradiation time.
 </p>
-<p>
-    ------
-
-</p>
+<p></p>
 <p>
     <strong>(2.2) – Determination of absolute concentrations from FLA-5100 (GE Healthcare Japan) plate reader fluorescence measurements.</strong>
 </p>
@@ -1116,9 +1127,7 @@ experiments: (1) experiments done with 20nt polythymidine sequences tethering be
     setting up wells on the microplate with various concentrations of FAM and Cy5, recording relative fluorescence measurements, and doing some straightforward
     linear regression analysis.
 </p>
-<p>
-    ---
-</p>
+<p></p>
 <p id = "2.2p">
     <strong>Protocol for experiment [2.2]:</strong>
 </p>
@@ -1152,9 +1161,7 @@ experiments: (1) experiments done with 20nt polythymidine sequences tethering be
 <p>
     [Step 4] We scan the plate with the FLA-5100 scanner.
 </p>
-<p>
-    ---
-</p>
+<p></p>
 <p class="title">
     <strong>Results &amp; analysis for experiment [2.2]:</strong>
 </p>
@@ -1232,9 +1239,7 @@ experiments: (1) experiments done with 20nt polythymidine sequences tethering be
     <img width="42" height="19" src="img/clip_image193.png"/>
     units of AU for Cy5. The lesson here is that one must always calibrate their scanner or generate a reference for any novel dye choice.
 </p>
-<p>
-    ------
-</p>
+<p></p>
 <p class="title">
     <strong>(2.3) – A first light: proof of the asymmetric bead functionalization protocol.</strong>
 </p>
@@ -1249,9 +1254,7 @@ experiments: (1) experiments done with 20nt polythymidine sequences tethering be
     ) and opacity of the beads we have thus far been working with, allowing us to asymmetrically functionalize their hemispheres (and by this action making
     them “bichromatic”).
 </p>
-<p>
-    -
-</p>
+<p></p>
 <p>
     In a bit more detail, we first use biotin-streptavidin interactions to decorate the flat-bottomed surfaces of microplate wells with the b-pT(20)-S3* oligo
 (consisting of the basic S3 sequence on a 20nt polythymidine tether), we likewise prepare b-pT(20)-S3 labeled beads (as per experiment    <strong>[1.1]</strong>,<strong> </strong>if one swaps<strong> </strong>b-pT(20)-S3 for b-S3-FAM), and then sequence specifically dock these beads to the
@@ -1273,9 +1276,7 @@ experiments: (1) experiments done with 20nt polythymidine sequences tethering be
     source. At this point, we decided to form a pre-annealed {S2*-S3* :: <sup>CV</sup>U-S2} complex, and demonstrate (ultimately using S2*-Cy5 as a probe) that
     the opposite hemisphere to the one formally functionalized could be specifically decorated with a new oligonucleotide (i.e. <sup>CV</sup>U-S2).
 </p>
-<p>
-    ---
-</p>
+<p></p>
 <p class="title">
     <strong>Protocol for experiment [2.3]:</strong>
 </p>
